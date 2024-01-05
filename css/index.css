@@ -4,8 +4,15 @@
   box-sizing: 0;
 }
 /* style css */
-body {
-  background-color: #f7f2ec;
+#circle {
+  margin: 70px 200px;
+  padding: 5px;
+  width: 200px;
+  height: 300px;
+  background-color: #ef9494; /* Farven på din cirkel */
+  border-radius: 50%; /* Gør div'en rund */
+  filter: blur(150px); /* Anvend blur-effekt (ændr værdien efter behov) */
+  z-index: 1;
 }
 h1 {
   font-family: "ohno-blazeface", sans-serif;
@@ -57,6 +64,14 @@ h2 {
   }
   h2 {
     font-size: 30px;
+  }
+  #circle {
+    margin: 80px 700px;
+    padding: 2px;
+    width: 250px;
+    height: 410px;
+    filter: blur(400px); /* Anvend blur-effekt (ændr værdien efter behov) */
+    z-index: 1;
   }
   /* layout */
   .logo2 {

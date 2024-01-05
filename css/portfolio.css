@@ -63,10 +63,14 @@ h4 {
   height: 1px;
   background: #b3b3b3;
 }
-.projekt_item {
+.projekt_item1,
+.projekt_item2,
+.projekt_item3,
+.projekt_item4 {
   display: flex;
   align-items: center;
 }
+
 #plus_tegn2,
 #plus_tegn3,
 #plus_tegn4,
@@ -77,6 +81,14 @@ svg {
   margin: auto;
   padding: auto;
 }
+/* animationer */
+/* prøvede at få krydset til at dreje når man hover over de forskellige links
+.projekt_item1:hover > #plus_tegn2 {
+  to {
+    rotate: 180deg;
+  }
+} */
+
 /* .fane_2,
 
 .fane_3,
@@ -117,7 +129,7 @@ svg {
   }
 }
 
-/* animation */
+/* animations klasser */
 @keyframes turn_kf {
   to {
     rotate: 180deg;
