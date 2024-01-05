@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e8dfd1;
+}
+footer h4 {
+  font-family: "degular";
+  font-weight: 200;
+  font-style: normal;
+  color: #8e0e0e;
+}
+footer {
+  margin: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 30px;
+}
+.footer_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

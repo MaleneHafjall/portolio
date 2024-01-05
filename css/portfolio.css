@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* style css */
+h1 {
+  color: #8e0e0e;
+  font-family: "mencken-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+h2 {
+  color: #8e0e0e;
+  font-family: "mencken-std", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 25px;
+}
+h3 {
+  color: #ef9494;
+  font-family: "ohno-blazeface", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 30px;
+}
+.projekt_item {
+  color: #8e0e0e;
+  font-family: "mencken-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+}
+main a {
+  color: #8e0e0e;
+  font-family: "mencken-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  text-decoration: none;
+}
+main a:hover {
+  color: #ef9494;
+}
+h4 {
+  color: #8e0e0e;
+}
+/* layout css */
+.projekt {
+  height: 150px;
+  margin: 60px;
+}
+.projekt_menu {
+  display: grid;
+  margin: auto;
+  width: 350px;
+  grid-template-columns: 2fr 3fr 1fr;
+  row-gap: 20px;
+}
+.horizontal-line {
+  grid-column: span 6; /* Bredde af 6 kolonner for linjen */
+  height: 1px;
+  background: #b3b3b3;
+}
+.projekt_item {
+  display: flex;
+  align-items: center;
+}
+#plus_tegn2,
+#plus_tegn3,
+#plus_tegn4,
+#plus_tegn5,
+svg {
+  align-items: baseline;
+  justify-content: baseline;
+  margin: auto;
+  padding: auto;
+}
+/* .fane_2,
+
+.fane_3,
+.fane_4,
+.fane_5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.projekt_item {
+  flex-shrink: 0;
+}
+.fane_4 {
+  flex: 1;
+}
+#plus_tegn4 {
+  flex-shrink: 0;
+} */
+@media screen and (min-width: 600px) {
+  .projekt {
+    margin: 20px;
+    padding: 30px;
+  }
+  h1,
+  h2 {
+    margin-left: 20%;
+  }
+
+  .projekt_menu {
+    display: grid;
+    margin: auto;
+    width: 600px;
+    grid-template-columns: 2fr 3fr 1fr;
+    row-gap: 20px;
+  }
+}
+
+/* animation */
+@keyframes turn_kf {
+  to {
+    rotate: 180deg;
+  }
+}
