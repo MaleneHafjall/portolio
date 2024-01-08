@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* tema 2 */
+/* style */
+h1 {
+  color: #8e0e0e;
+  font-family: Mencken Std Head;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.start_h {
+  color: #8e0e0e;
+  font-family: Mencken Std Head;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+p,
+a {
+  color: #8e0e0e;
+  font-family: Degular;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+}
+h2 {
+  color: #ef9494;
+  font-family: "ohno-blazeface", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.horizontal-line {
+  grid-column: span 6; /* Bredde af 6 kolonner for linjen */
+  height: 1px;
+  background: #b3b3b3;
+}
+.button {
+  border: 1px solid #8e0e0e; /* Farven på ringen */
+  border-radius: 20px;
+  padding: 5px 50px;
+  height: auto;
+  overflow: hidden;
+  transition: color 0.3s, background-color 0.3s;
+  width: 30%;
+}
+.button:hover {
+  color: #fff;
+  background-color: #ef9494;
+  border: none;
+}
+/* layout */
+.start {
+  margin-top: 3%;
+}
+img,
+source {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.tema_2 {
+  margin: 5%;
+}
+.overskift2 {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  align-items: baseline;
+  margin-bottom: 3%;
+}
+
+.knap_start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex: 1;
+  height: 100px;
+}
+.container_1 {
+  margin-top: 50px;
+}
+.container_1 > * {
+  margin-bottom: 20px;
+}
+.container_2 > * {
+  margin-bottom: 20px;
+}
+.container_3 > * {
+  margin-bottom: 20px;
+}
+.container_3 {
+  margin-bottom: 100px;
+}
+.buttom_button {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+}
