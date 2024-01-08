@@ -1,2 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* style css */
+h1 {
+  color: #8e0e0e;
+  font-family: "mencken-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+.horizontal-line {
+  display: none;
+}
+p,
+li {
+  font-family: "degular", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #8e0e0e;
+  line-height: 1.5;
+}
+a {
+  color: #8e0e0e;
+}
+h2 {
+  color: #8e0e0e;
+  font-family: "mencken-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
 /* layout css */
+
+main {
+  padding-bottom: 10%;
+  overflow-y: visible;
+}
+h1 {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.om_mig_grid {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  width: 75%;
+  height: 2100px;
+  margin: 5% auto auto 10%;
+  gap: 3%;
+  overflow: visible;
+}
+img,
+source {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+ul {
+  list-style: none;
+}
+.kontakt {
+  height: 100px;
+}
+.lidt_om_mig {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+#selfie {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  width: 100%;
+}
+.uddannelse {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+}
+.skills {
+  grid-column: 1 / span 2;
+  grid-row: 5;
+}
+.tekst_ommig > * {
+  margin-bottom: 20px;
+}
+.software {
+  grid-column: 1 / span 2;
+  grid-row: 6;
+  padding-bottom: 30px;
+  max-height: 550px;
+}
+.software > * {
+  padding-bottom: 150px;
+}
+.indhold {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+/* desktop */
+@media screen and (min-width: 800px) {
+  /* style */
+  .horizontal-line {
+    display: block;
+    width: 600px;
+    height: 1px;
+    background: #b3b3b3;
+  }
+  /* layout */
+  .om_mig_container {
+    margin-left: 10%;
+    margin-top: 30px;
+  }
+  h1 {
+    margin: 0;
+  }
+  .tekst_indhold {
+    padding-right: 30%;
+  }
+  /* Grid */
+  .om_mig_grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 100px auto auto;
+    margin-left: 5%;
+  }
+  .lidt_om_mig {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+  .selfie {
+    grid-column: 3 / span 4;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .uddannelse {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .skills {
+    grid-column: 2 / span 3;
+    grid-row: 3;
+    padding-right: 40%;
+  }
+  .software {
+    grid-column: 4;
+    grid-row: 3;
+    overflow-x: visible;
+  }
+  .indhold {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+  }
+}

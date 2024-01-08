@@ -110,7 +110,7 @@ svg {
 #plus_tegn4 {
   flex-shrink: 0;
 } */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .projekt {
     margin: 20px;
     padding: 30px;
@@ -122,8 +122,8 @@ svg {
 
   .projekt_menu {
     display: grid;
-    margin: auto;
-    width: 600px;
+    margin: 50px 32%;
+    width: 540px;
     grid-template-columns: 2fr 3fr 1fr;
     row-gap: 20px;
   }
@@ -134,4 +134,8 @@ svg {
   to {
     rotate: 180deg;
   }
+}
+
+code {
+  color: #8e0e0e;
 }
